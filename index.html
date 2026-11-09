@@ -1,0 +1,252 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raden Store - Top Up & Produk Free Fire</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff6b00, #ff3d00, #000);
+            min-height: 100vh;
+            color: white;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0,0,0,0.8);
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        header h1 {
+            color: #ffcc00;
+            font-size: 28px;
+            text-shadow: 2px 2px #ff6b00;
+        }
+
+        header p {
+            color: #ffdd66;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .intro {
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 25px;
+            border: 2px solid #ffcc00;
+        }
+
+        .intro h2 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        /* Daftar Produk */
+        .produk-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .produk-card {
+            background: white;
+            color: #222;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            transition: transform 0.3s;
+        }
+
+        .produk-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .produk-gambar {
+            background: linear-gradient(45deg, #ff6b00, #ffcc00);
+            padding: 30px;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .produk-info {
+            padding: 15px;
+        }
+
+        .produk-nama {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .produk-desc {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .produk-harga {
+            color: #e65100;
+            font-weight: bold;
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+
+        .btn-beli {
+            width: 100%;
+            background: linear-gradient(90deg, #ff6b00, #e65100);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn-beli:hover {
+            background: #ff3d00;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 2px solid #ffcc00;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .status {
+            display: inline-block;
+            background: #4caf50;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Bagian Atas / Judul -->
+<header>
+    <h1>🔥 RADEN STORE 🔥</h1>
+    <p>Top Up Diamond Free Fire Termurah & Terpercaya ⚡</p>
+    <span class="status">✅ BUKA — LAYANAN AKTIF</span>
+</header>
+
+<!-- Isi Toko -->
+<div class="container">
+    <div class="intro">
+        <h2>Selamat Datang di Raden Store!</h2>
+        <p>Tempat terbaik beli Diamond FF, Member, & Item Game dengan harga murah & proses instan! 💎</p>
+    </div>
+
+    <h3 style="margin-bottom:15px; font-size:22px; color:#ffcc00;">📦 Daftar Produk Free Fire</h3>
+
+    <div class="produk-grid">
+        
+        <!-- Produk 1 -->
+        <div class="produk-card">
+            <div class="produk-gambar">💎</div>
+            <div class="produk-info">
+                <div class="produk-nama">Diamond 70</div>
+                <div class="produk-desc">70 Diamond + Bonus 5 💎</div>
+                <div class="produk-harga">Rp 8.500</div>
+                <button class="btn-beli" onclick="beli('Diamond 70', 8500)">Beli Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="produk-card">
+            <div class="produk-gambar">💎💎</div>
+            <div class="produk-info">
+                <div class="produk-nama">Diamond 355</div>
+                <div class="produk-desc">355 Diamond + Bonus 30 💎</div>
+                <div class="produk-harga">Rp 38.000</div>
+                <button class="btn-beli" onclick="beli('Diamond 355', 38000)">Beli Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="produk-card">
+            <div class="produk-gambar">👑</div>
+            <div class="produk-info">
+                <div class="produk-nama">Membership Mingguan</div>
+                <div class="produk-desc">Masuk harian + Diamond tiap hari</div>
+                <div class="produk-harga">Rp 15.000</div>
+                <button class="btn-beli" onclick="beli('Membership Mingguan', 15000)">Beli Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="produk-card">
+            <div class="produk-gambar">🏆</div>
+            <div class="produk-info">
+                <div class="produk-nama">Membership Bulanan</div>
+                <div class="produk-desc">Bonus besar + Eksklusif</div>
+                <div class="produk-harga">Rp 75.000</div>
+                <button class="btn-beli" onclick="beli('Membership Bulanan', 75000)">Beli Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Produk 5 -->
+        <div class="produk-card">
+            <div class="produk-gambar">🎁</div>
+            <div class="produk-info">
+                <div class="produk-nama">Diamond 1000</div>
+                <div class="produk-desc">1000 Diamond + Bonus 120 💎</div>
+                <div class="produk-harga">Rp 95.000</div>
+                <button class="btn-beli" onclick="beli('Diamond 1000', 95000)">Beli Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Produk 6 -->
+        <div class="produk-card">
+            <div class="produk-gambar">🔥</div>
+            <div class="produk-info">
+                <div class="produk-nama">Pass Elite / Booyah</div>
+                <div class="produk-desc">Buka semua misi & hadiah eksklusif</div>
+                <div class="produk-harga">Rp 110.000</div>
+                <button class="btn-beli" onclick="beli('Pass Elite', 110000)">Beli Sekarang</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bawah Halaman -->
+<footer>
+    <p><strong>Raden Store</strong> — Toko Terpercaya Sejak 2026 ✨</p>
+    <p style="margin-top:8px;">📞 Hubungi: WhatsApp 085385135859 | ⏰ Proses 1-5 Menit</p>
+    <p style="margin-top:5px; font-size:12px; color:#aaa;">Free Fire adalah merek Garena. Raden Store adalah toko mandiri, tidak berafiliasi resmi.</p>
+</footer>
+
+<!-- Kode Fungsi Tombol -->
+<script>
+function beli(namaProduk, harga) {
+    alert('✅ Kamu memilih: ' + namaProduk + '\n💰 Harga: Rp ' + harga.toLocaleString('id-ID') + '\n\nLanjut ke pembayaran lewat WhatsApp!');
+    // Nanti bisa ditambah link WhatsApp di sini
+    window.open('https://whatsapp.com/channel/0029Vb6wyVKDTkK5rYT9B70Y?text=Halo%20Raden%20Store,%20saya%20mau%20beli%20' + encodeURIComponent(namaProduk), '_blank');
+}
+</script>
+
+</body>
+</html>
